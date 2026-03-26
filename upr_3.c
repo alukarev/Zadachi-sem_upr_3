@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void exersice1(){
+void exercise1(){
     int n;
     int arr[100];
 
@@ -38,7 +38,7 @@ void exersice1(){
     printf("Nachalen indeks: %d\n", max_start);
     printf("Max duljina: %d", max_len);
 }
-void exersice2(){
+void exercise2(){
     int n;
     int arr[100];
 
@@ -63,7 +63,7 @@ void exersice2(){
         printf("redicata e prekusnata");
     }
 }
-void exersice3(){
+void exercise3(){
     int n;
     int arr[100];
 
@@ -83,7 +83,7 @@ void exersice3(){
     printf("%d ", arr_2[i]);
     }
 }
-void exersice4(){
+void exercise4(){
     int n;
     int k;
     int arr[100];
@@ -112,7 +112,7 @@ for(int i = 0; i < n; i++){
 }
 
 }
-void exersice5(){
+void exercise5(){
     int n;
     int k;
     int arr[100];
@@ -140,7 +140,7 @@ void exersice5(){
     printf("k po golemina element: %d", arr_2[k - 1]);
 }
 
-void exersice6(){
+void exercise6(){
     int n;
     int arr[100];
 
@@ -193,7 +193,7 @@ void exersice6(){
     }
 
  }
-void exersice7(){
+void exercise7(){
     int n,target_sum;
     int arr[100];
 
@@ -226,10 +226,10 @@ void exersice7(){
     }
 }
 if (!found) {
-        printf("\nNqma posledovatelnost ot susedni chisla s takava suma.\n");
+        printf("\nNqma posledovatelnost ot sysedni 4isla s takava suma.\n");
     }
 }
-void exersice8(){
+void exercise8(){
     int arr[20];
     int current_size = 10;
     int new_num, insert_index;
@@ -264,7 +264,7 @@ void exersice8(){
     printf("\n");
 
 }
-void exersice9(){
+void exercise9(){
     int n;
     int arr[100];
 
@@ -308,6 +308,36 @@ void exersice9(){
     printf("\n");
 }
 int main(){
-    exersice9();
-    return 0;
+    int num;
+    do {
+        printf("\nEnter exercise number (1-9) or 0 to exit: ");
+        
+        
+        if (scanf("%d", &num) != 1) {
+            while (getchar() != '\n'); 
+            printf("Invalid input! Please enter a number.\n");
+            continue;
+        }
+
+        printf("\n");
+        switch (num) {
+            case 1:  exercise1();  break;
+            case 2:  exercise2();  break;
+            case 3:  exercise3();  break;
+            case 4:  exercise4();  break;
+            case 5:  exercise5();  break;
+            case 6:  exercise6();  break;
+            case 7:  exercise7();  break;
+            case 8:  exercise8();  break;
+            case 9:  exercise9();  break;
+            case 0: 
+                printf("Exiting program\n"); 
+                break; 
+            default: 
+                printf("Error: Number must be between 1 and 9!\n");
+                break;
+        }
+    } while (num != 0);
+
+     return 0;
 }
