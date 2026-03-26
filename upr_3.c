@@ -226,7 +226,7 @@ void exersice7(){
     }
 }
 if (!found) {
-        printf("\nNqma posledovatelnost ot sysedni 4isla s takava suma.\n");
+        printf("\nNqma posledovatelnost ot susedni chisla s takava suma.\n");
     }
 }
 void exersice8(){
